@@ -1,0 +1,42 @@
+.b-w {
+    width: 100%;
+    background: #a3d1d1;
+}
+.banner-wrap {
+    width: 982px;
+    height: 336px;
+    margin: 0 auto;
+
+    .banner {
+        float: left;
+        width: 728px;
+        height: 336px;
+        img {
+            border: none;
+        }
+    }
+    .download{
+        float: right;
+        width: 253px;
+        height: 336px;
+        background: url("../img/download.png") 0 0 no-repeat;
+        overflow: hidden;
+        a {
+            display: block;
+            width: 215px;
+            height: 56px;
+            margin: 0 auto;
+            margin-top: 212px;
+            border-radius: 3px;
+            &:hover {
+                background: url("../img/download.png") 0 336px no-repeat;
+            }
+        }
+        p {
+            margin: 10px auto;
+            font-size: 12px;
+            text-align: center;
+            color: #8d8d8d;
+        }
+    }
+}

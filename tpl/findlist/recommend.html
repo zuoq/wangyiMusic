@@ -1,0 +1,103 @@
+<div ms-include-src="'tpl/findlist/banner.html'"></div>
+<div class="recom-con clearfix" ms-controller="recommend">
+    <div class="left">
+        <div class="rmtj clearfix">
+            <div class="r-link">
+                <a href="javascript:;" class="title">{{rm_recom.title}}</a>
+                <ul ms-repeat="rm_recom.fl">
+                    <a href="javascript:;">{{el}}</a>
+                </ul>
+                <a href="javascript:;" class="more">更多</a>
+            </div>
+            <ul class="rm-mv" ms-repeat="rm_mv">
+                <div class="item">
+                    <a href="javascript:;" class="img-con">
+                        <img ms-src={{el.img_src}} alt=""/>
+                        <div class="db-num">
+                            <div class="st-icon iconfont">&#xe617</div>
+                            <div class="num">{{el.num}}</div>
+                            <div class="bf iconfont">&#xe607</div>
+                        </div>
+                    </a>
+                    <div class="ins">{{el.instruction}}</div>
+                </div>
+            </ul>
+        </div>
+        <div class="xdsj clearfix">
+            <div class="r-link">
+                <a href="javascript:;" class="title">新碟上架</a>
+                <a href="javascript:;" class="more">更多</a>
+            </div>
+            <ul class="index-banner clearfix">
+                <div class="item" ms-repeat="index_banner_item">
+                    <a href="javascript:;" class="img-con">
+                        <img ms-src={{el.img_src}} alt=""/>
+                        <div class="bf-hide iconfont">&#xe607</div>
+                    </a>
+                    <div class="name">{{el.name}}</div>
+                    <div class="author">{{el.author}}</div>
+                </div>
+            </ul>
+        </div>
+        <div class="bd clearfix">
+            <div class="r-link">
+                <a href="javascript:;" class="title">榜单</a>
+                <a href="javascript:;" class="more">更多</a>
+            </div>
+            <div class="bd-con">
+                <ul class="bd-item" ms-repeat="bd_item">
+                    <div class="head clearfix">
+                        <img ms-src={{el.img_src}} alt=""/>
+                        <ul>
+                            <p class="bd-title">{{el.bd_title}}</p>
+                            <li class="bd-bf iconfont">&#xe607</li>
+                            <li class="bd-sc iconfont">&#xe607</li>
+                        </ul>
+                    </div>
+
+                    <div class="list-con">
+                        <li class="list" ms-repeat-elem="el.list"><span>{{elem.list_num}}</span>{{elem.list_name}}<i class="bf iconfont">&#xe607</i><i class="tj iconfont">&#xe607</i><i class="sc iconfont">&#xe607</i></li>
+                        <li class="look-all"><a href="javascript:;">查看全部</a></li>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!--right-->
+    <div class="right">
+        <div class="user-login">
+            <p>登录网易云音乐，可以享受无限收藏的乐趣，并且无限同步到手机</p>
+            <button>用户登录</button>
+        </div>
+
+        <div class="rzgs r-item clearfix">
+            <h3>
+                <span>入驻歌手</span>
+                <i></i>
+                <p>看大牌明星的私房歌单</p>
+            </h3>
+            <div class="rz-singer" ms-repeat="rz_singer">
+                <img ms-src="{{el.img_src}}" alt=""/>
+                <div class="detailed">
+                    <div class="name">{{el.name}}</div>
+                    <div class="jieshao">{{el.jieshao}}</div>
+                </div>
+            </div>
+            <div class="more"><a href="javascript:;">更多入驻歌手></a></div>
+        </div>
+
+        <div class="rmdj r-item">
+            <h3>
+                <span>热门DJ</span>
+            </h3>
+            <div class="dj-singer" ms-repeat="dj_singer">
+                <img ms-src="{{el.img_src}}" alt=""/>
+                <div class="detailed">
+                    <div class="name">{{el.name}}<i class="iconfont"></i></div>
+                    <div class="jieshao">{{el.jieshao}}</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

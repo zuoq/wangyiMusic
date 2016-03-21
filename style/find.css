@@ -1,0 +1,29 @@
+.hover {
+  background: url("../img/find-item.png") 0 0 repeat-x;
+}
+.find {
+  width: 100%;
+  background: url("../img/find_bg.png") 0 0 repeat-x;
+}
+.find-item {
+  width: 608px;
+  height: 33px;
+  margin: 0 auto;
+}
+.find-item a {
+  float: left;
+  line-height: 20px;
+  padding-left: 13px;
+  padding-right: 14px;
+  margin: 0 16px;
+  margin-top: 7px;
+  font-size: 12px;
+  color: #fff;
+  border-radius: 9px;
+}
+.find-item a:hover {
+  background: url("../img/find-item.png") 0 0 repeat-x;
+}
+.find-item .active {
+  background: url("../img/find-item.png") 0 0 repeat-x;
+}
